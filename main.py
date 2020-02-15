@@ -3,6 +3,7 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.uix.floatlayout import FloatLayout
+from kivy.core.window import Window
 
 
 Window.clearcolor = (0.48, 0.48, 0.48, 1)
@@ -39,6 +40,7 @@ class MainDisplay(FloatLayout):
 
 class Application(App):
     def build(self):
+        self.title = "Simple Calculator"
         return MainDisplay()
 
 
