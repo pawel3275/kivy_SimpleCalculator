@@ -12,7 +12,7 @@
             Label:
                 id: result_window
                 text_size: self.width, None
-                font_size: 0.75 * self.height
+                font_size: 0.40 * self.height
                 pos_hint: {"y": 0.60}
                 halign: "center"
                 valign: "bottom"
@@ -26,11 +26,11 @@
                 halign: "right"
                 valign: "middle"
                 text: root.equation
-                font_size: 0.75 * self.height
+                font_size: 0.25 * self.height
         FloatLayout:
             Button:
                 pos_hint: {"x": 0, "y": 0}
-                text: "Clear"
+                text: "C"
                 on_release: root.clear()
             Button:
                 pos_hint: {"x": 0.25, "y": 0}
